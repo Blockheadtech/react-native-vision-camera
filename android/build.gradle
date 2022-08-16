@@ -263,6 +263,7 @@ def kotlin_version = getExtOrDefault('kotlinVersion')
 dependencies {
   // noinspection GradleDynamicVersion
   implementation 'com.facebook.react:react-native:+'
+  implementation project(':expo-modules-core')
 
   if (ENABLE_FRAME_PROCESSORS) {
     implementation project(':react-native-reanimated')
